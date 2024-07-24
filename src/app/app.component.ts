@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { PostListComponent } from "./components/post-list/post-list.component";
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { PostListComponent } from "./pages/post-list/post-list.component";
+import { ApiService } from './service/api.service';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,4 @@ import { PostListComponent } from "./components/post-list/post-list.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-
-}
+export class AppComponent { }
